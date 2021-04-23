@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="src/components/storage.js"></script>
+	<title>March-2021</title>
+	<style>
+		body {
+			text-align: center;
+			padding-top: 50%;
+			transform: translateY(-50%);
+			background: url(assets/kitty_background.png)no-repeat;
+			background-size: cover;
+		}
+	
+		#sign-in {
+			padding: 28px;
+			font-size: 16px;
+			background:#FF69B4;
+			color:#FFE4E1;
+			position: relative;
+			outline: none;
+			border:none;
+		}
+
+		#sign-in:hover{
+			background: #C71585;
+			transition: 0.8s;
+			cursor:pointer;
+		}
+		#sign-in:after{
+			content: "";
+			position: absolute;
+			top:0;
+			right:-2px;
+			width:32px;
+			height:32px;
+			background:url(assets/cat.png)no-repeat;
+			background-position: center;
+		}
+		#sign-up {
+			padding: 28px;
+			font-size: 16px;
+			background:#FF69B4;
+			color:#FFE4E1;
+			position: relative;
+			border:none;
+			outline: none;
+		}
+
+		#sign-up:hover{
+			background: #C71585;
+			transition: 0.8s;
+			cursor:pointer;
+		}
+		#sign-up:after{
+			content: "";
+			position: absolute;
+			top:0;
+			right:0;
+			width:32px;
+			height:32px;
+			background:url(assets/cat_two.png)no-repeat;
+			background-position: center;
+		}
+		
+	</style>
+
+</head>
+  
+  <button id="sign-in">Sign In</button>
+	<button id="sign-up">Sign Up</button>
+
+
+
+
+	<script src='./dist/main.js'></script>
+</body>
+</html>
